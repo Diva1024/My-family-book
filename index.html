@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>My family</title>
+</head>
+<body>
+    <center>
+<h1>Hi, I am Diva Shah</h1>
+<p>Take a look at my family</p>
+<img height=500px, width=500px id="Family_img" src="Me.jpg">
+<h4 id="FamilyName">Diva Shah</h4>
+<button type="button"onclick="change()">Next member</button>
+</center>
+ <script>
+var img=["He.jpg", "dada.jpg", "dadi.jpg", "mom and dad.jpg"]
+
+var names= ["Heet Shah" , "Pranlal Shah" , "Rasila Shah", "Neha Shah & Kamal Shah"]
+
+var i=0;
+function change()
+{
+i++;
+var number_of_family_members= 4;
+if(i > number_of_family_members)
+{
+i = 0;
+}
+
+ var updatedimages= img[i];
+ var updatedname= names[i];
+ document.getElementById("Family_img").src= updatedimages;
+ document.getElementById("FamilyName").innerHTML= updatedname;
+}
+
+ </script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
